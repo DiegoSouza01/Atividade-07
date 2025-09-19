@@ -42,7 +42,7 @@ public final class Dinheiro {
         return new Dinheiro(this.valor.subtract(outro.valor), this.moeda);
     }
 
-    // Método para aplicar desconto
+    // Metodo para aplicar desconto
     public Dinheiro aplicarDesconto(BigDecimal porcentagem) {
         if (porcentagem == null || porcentagem.compareTo(new BigDecimal("0.30")) > 0 || porcentagem.compareTo(BigDecimal.ZERO) < 0) {
             throw new ValorInvalidoException("A porcentagem do cupom deve ser entre 0% e 30%.");
