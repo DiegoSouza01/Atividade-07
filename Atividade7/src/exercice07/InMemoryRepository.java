@@ -19,4 +19,9 @@ public class InMemoryRepository <T extends Identificavel<ID>, ID> implements IRe
     public List<T> getAll() {
         return Collections.unmodifiableList(new ArrayList<>(repositorio.values()));
     }
+
+    @Override
+    public void remover(ID id) {
+
+    }
 }
